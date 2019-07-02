@@ -4,7 +4,7 @@ App that lets you to find and download html pages from [common crawl](http://com
 
 ## Instalation
 
-TODO
+`pip install git+https://github.com/vladserkoff/common-crawler.git`
 
 ## Usage
 
