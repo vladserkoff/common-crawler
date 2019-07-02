@@ -1,0 +1,4 @@
+boto3
+cytoolz
+requests
+urllib3
