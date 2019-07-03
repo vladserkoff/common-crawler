@@ -1,6 +1,6 @@
 # Common Crawler
 
-App that lets you to find and download html pages from [common crawl](http://commoncrawl.org/).
+An app that lets you find and download web pages contents from [common crawl](http://commoncrawl.org/).
 
 ## Instalation
 
@@ -21,12 +21,12 @@ docker build -t cc-index-server .
 docker run -d -p 8080:8080 cc-index-server
 ```
 
-### Find available urls for a domain, then load html with some metadata
+### Find available urls for a domain, then load an html with additional metadata
 
 ```python
 In [1]: from common_crawler import CommonCrawler
 
-In [2]: cc = CommonCrawler('http://localhost:8080)
+In [2]: cc = CommonCrawler('http://localhost:8080') # or leave it blank to use Common Crawl's server.
 
 In [3]: urls = cc.find_domain_urls('http://example.com')
 
